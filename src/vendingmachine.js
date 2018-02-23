@@ -16,14 +16,23 @@ module.exports = function getSpecificInventory(customerInput) {
 };
 
 module.exports = function isInventoryAvailable(customerInput) {
-	var result = inventory.map(a => a.code);
-
-	if (result.includes(customerInput)) {
-		return customerInput;
+	const selectedProduct = [];
+	const product = inventory.filter(i => i.code === customerInput);
+	const x = product.map(i => {
+		let q = {};
+		q["name"] = i.name;
+		q["code"] = i.code;
+		q["quantity"] = i.quantity;
+		q["price"] = i.price;
+		return selectedProduct.push(q);
+	});
+	if (selectedProduct[0].quantity > 0) {
+		return true;
 	} else {
-		return "Not available at this time";
+		return false;
 	}
 };
+
 // module.exports = function getSpecificInventory(customerInput) {
 // 	let allCodes = "";
 // 	for (const code in inventory) {

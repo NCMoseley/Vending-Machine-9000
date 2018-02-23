@@ -1,5 +1,5 @@
 const getSpecificInventory = require("../src/vendingmachine");
-
+const isInventoryAvailable = require("../src/vendingmachine");
 // Vending Test 1 suite
 describe("Functionality testing", () => {
 	describe("Does machine return correct item?", () => {
@@ -15,7 +15,7 @@ describe("Functionality testing", () => {
 		test("Should return true or false", () => {
 			const result = isInventoryAvailable("A02");
 			// const result = getSpecificInventory("C02");
-			console.log(result);
+			console.log("We have", selectedProduct[0].quantity, "available");
 			expect(result).toBeTruthy();
 		});
 	});
