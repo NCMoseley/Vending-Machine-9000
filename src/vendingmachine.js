@@ -9,7 +9,7 @@ const Money = {
 	NICKEL: { name: "Nickel", value: 0.05 }
 };
 
-var Product = {
+const Product = {
 	A01: { name: "Skittles", cost: 1.25 },
 	A02: { name: "Power Bar", cost: 1.25 },
 	A03: { name: "Testosterone Shot", cost: 12.25 },
@@ -20,7 +20,7 @@ var Product = {
 	B04: { name: "Poppet", cost: 18.25 }
 };
 
-// var Product = {
+// const Product = {
 // 	CHIPS: { name: "Chips", cost: 0.75 },
 // 	SODA: { name: "Soda", cost: 1.25 },
 // 	CANDY: { name: "Candy", cost: 0.85 }
@@ -52,7 +52,7 @@ module.exports = function VendingMachine() {
 	this.itemBin = [];
 
 	this.cash = function(coin) {
-		var coinIndex = this.coinsAccepted.indexOf(coin);
+		const coinIndex = this.coinsAccepted.indexOf(coin);
 		if (coinIndex > 0) {
 			return this.cashArray[coinIndex].count;
 		} else {
@@ -71,15 +71,15 @@ module.exports = function VendingMachine() {
 	};
 
 	this.updateTotal = function() {
-		var total = 0;
-		for (var i = 0; i < this.coinsAdded.length; i++) {
+		let total = 0;
+		for (let i = 0; i < this.coinsAdded.length; i++) {
 			total += this.coinsAdded[i].value;
 		}
 		this.amountInserted = total;
 	};
 
 	this.insertCoin = function(coin) {
-		var coinIndex = this.coinsAccepted.indexOf(coin);
+		const coinIndex = this.coinsAccepted.indexOf(coin);
 		if (coinIndex > -1) {
 			this.coinReturn.push(coin);
 			this.cashArray[coinIndex].count++;
@@ -96,10 +96,12 @@ module.exports = function VendingMachine() {
 	};
 
 	this.addInventory = function(product, number) {
-		var idx = this.products.indexOf(product);
-		console.log(this.products);
-		console.log(Product.A02);
-		console.log(idk);
+		// const idx = this.products.indexOf(product);
+		const idx = this.products
+			.map(p => {
+				return p.name;
+			})
+			.indexOf(product.name);
 		if (idx > -1) {
 			if (number == null || typeof number == "undefined") {
 				number = 1;
@@ -109,7 +111,11 @@ module.exports = function VendingMachine() {
 	};
 
 	this.getInventory = function(product) {
-		var idx = this.products.indexOf(product);
+		const idx = this.products
+			.map(p => {
+				return p.name;
+			})
+			.indexOf(product.name);
 		console.log(idx);
 		if (idx > -1) {
 			return this.inventory[idx];
@@ -119,14 +125,16 @@ module.exports = function VendingMachine() {
 	};
 
 	this.purchaseProduct = function(product) {
-		// console.log(product);
 		this.amountInserted = this.amountInserted - product.cost;
 		this.coinsAdded = [];
 	};
 
 	this.vend = function(product) {
-		// console.log(product);
-		var idx = this.products.indexOf(product);
+		const idx = this.products
+			.map(p => {
+				return p.name;
+			})
+			.indexOf(product.name);
 		if (idx > -1) {
 			this.purchaseProduct(product);
 

@@ -1,15 +1,15 @@
 "use strict";
 
-var VendingMachine = require("../src/vendingmachine");
-var insertCoin = require("../src/vendingmachine");
-var updateDisplay = require("../src/vendingmachine");
-var updateTotal = require("../src/vendingmachine");
-var returnCoins = require("../src/vendingmachine");
-var addInventory = require("../src/vendingmachine");
-var getInventory = require("../src/vendingmachine");
-var purchaseProduct = require("../src/vendingmachine");
+const VendingMachine = require("../src/vendingmachine");
+const insertCoin = require("../src/vendingmachine");
+const updateDisplay = require("../src/vendingmachine");
+const updateTotal = require("../src/vendingmachine");
+const returnCoins = require("../src/vendingmachine");
+const addInventory = require("../src/vendingmachine");
+const getInventory = require("../src/vendingmachine");
+const purchaseProduct = require("../src/vendingmachine");
 
-var Money = {
+const Money = {
 	DOLLAR: { name: "Dollar", value: 1.0 },
 	SILVER_DOLLAR: { name: "Silver Dollar", value: 1.0 },
 	HALF_DOLLAR: { name: "Half Dollar", value: 0.5 },
@@ -19,13 +19,7 @@ var Money = {
 	PENNY: { name: "Penny", value: 0.01 }
 };
 
-// var XProduct = {
-// 	CHIPS: { name: "Chips", cost: 0.75 },
-// 	SODA: { name: "Soda", cost: 1.25 },
-// 	CANDY: { name: "Candy", cost: 0.85 }
-// };
-
-var Product = {
+const Product = {
 	A01: { name: "Skittles", cost: 1.25 },
 	A02: { name: "Power Bar", cost: 1.25 },
 	A03: { name: "Testosterone Shot", cost: 12.25 },
