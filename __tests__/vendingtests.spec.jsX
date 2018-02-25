@@ -1,6 +1,9 @@
 const getSpecificInventory = require("../src/getspecificinventory");
-const isInventoryAvailable = require("../src/isInventoryAvailable");
+const isInventoryAvailable = require("../src/isInventoryavailable");
 const isItemPaidFor = require("../src/isitempaidfor");
+const refillInventory = require("../src/refillinventory");
+// const reSupplyChange = require;
+
 // Vending Test 1 suite
 describe("Functionality testing", () => {
 	describe("Does machine return correct item?", () => {
@@ -25,8 +28,19 @@ describe("Functionality testing", () => {
 			expect(result).not.toBe("Please deposit more money");
 		});
 	});
+
+	describe("Will the machine refill if inventory is empty?", () => {
+		test("Should return new, filled inventory", () => {
+			const result = refillInventory();
+			// Note: this doesn't work yet
+			expect(result).not.toHaveProperty("quantity", 0);
+		});
+	});
+
+	describe("Machine will dispatch correct change", () => {
+		test("Should return new, filled inventory", () => {
+			const result = reSupplyChange(10.0);
+			expect(result).not.toHaveProperty("quantity", 0);
+		});
+	});
 });
-
-// TDD
-
-//  We are assuming full vending functionality.

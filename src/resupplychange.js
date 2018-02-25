@@ -1,7 +1,12 @@
-const inventory = require("../src/data");
-const reSupplyChange = require("../src/resupplychange");
+change = [
+	{ name: "nickels", quantity: 0, value: 0.05 },
+	{ name: "dimes", quantity: 0, value: 0.1 },
+	{ name: "quarters", quantity: 10, value: 0.25 }
+	// { name: "loonies", quantity: 5, value: 1.0 },
+	// { name: "twonies", quantity: 5, value: 2.0 }
+];
 
-module.exports = function isItemPaidFor(customerInput, creditInput) {
+module.exports = function reSupplyChange(change) {
 	const selectedProduct2 = [];
 	const product2 = inventory.filter(i2 => i2.code === customerInput);
 	const x2 = product2.map(i2 => {
