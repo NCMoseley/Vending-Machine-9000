@@ -1,6 +1,6 @@
 ## Vending Machine 9000
 
-This is a small TDD piece of software that can return vending machine like responses based on appropriate inputs.
+This is a small piece of software that can return vending machine like responses based on appropriate inputs.
 You can see all functions are tested and designed to be fundamental and simple.
 
 ![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%201.gif)
