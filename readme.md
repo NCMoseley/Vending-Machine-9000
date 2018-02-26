@@ -3,7 +3,8 @@
 This is a small TDD piece of software that can return vending machine like responses based on appropriate inputs.
 You can see all functions are tested and designed to be fundamental and simple.
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%201.gif)
+![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%202.gif)
 
 ## Requirements
 
