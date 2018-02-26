@@ -12,15 +12,17 @@ Have functionality for printing inventory. See modules: isinventoryavailable, ge
 
 Have functionality for refilling inventory See module: refillinventory
 
-Have functionality for re-supplying change See module: vendingmachine
+Have functionality for re-supplying change See module: vendingmachine, returnCoins
 
 Have functionality for dispensing inventory based on payment. See module: isitempaidfor
 
 ## Tech
 
-It is necessary to install Jest to use test functionality.
+It is necessary to install Jest to use test functionality:
 
 npm install jest-cli
+
+use the command 'jest' in the root to run the test suites
 
 ## Reference
 
