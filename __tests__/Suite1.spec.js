@@ -7,6 +7,8 @@ const reSupplyChange = require("../src/resupplychange");
 const inventory = require("../src/inventory");
 const products = require("../src/products");
 
+// NOTE: I abandoned this design and changed to Suite 2. I wanted to include it because I am proud of the code.
+
 describe("Functionality testing", () => {
 	describe("Does machine return correct item?", () => {
 		test("should return 1 item", () => {

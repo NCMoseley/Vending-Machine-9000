@@ -1,13 +1,13 @@
 "use strict";
 
-const VendingMachine = require("../src/vendingmachine");
-const insertCoin = require("../src/vendingmachine");
-const updateDisplay = require("../src/vendingmachine");
-const updateTotal = require("../src/vendingmachine");
-const returnCoins = require("../src/vendingmachine");
-const addInventory = require("../src/vendingmachine");
-const getInventory = require("../src/vendingmachine");
-const purchaseProduct = require("../src/vendingmachine");
+const VendingMachine = require("../src/Suite2vendingmachine");
+const insertCoin = require("../src/Suite2vendingmachine");
+const updateDisplay = require("../src/Suite2vendingmachine");
+const updateTotal = require("../src/Suite2vendingmachine");
+const returnCoins = require("../src/Suite2vendingmachine");
+const addInventory = require("../src/Suite2vendingmachine");
+const getInventory = require("../src/Suite2vendingmachine");
+const purchaseProduct = require("../src/Suite2vendingmachine");
 
 // Please NOTE much of this code is inspired from a source listed in the readme.
 
