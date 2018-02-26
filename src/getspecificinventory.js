@@ -1,4 +1,4 @@
-const inventory = require("../src/data");
+const inventory = require("../src/inventory");
 
 module.exports = function getSpecificInventory(customerInput) {
 	var result = inventory.map(a => a.code);

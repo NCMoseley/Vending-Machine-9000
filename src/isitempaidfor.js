@@ -1,4 +1,4 @@
-const inventory = require("../src/data");
+const inventory = require("../src/inventory");
 const reSupplyChange = require("../src/resupplychange");
 
 module.exports = function isItemPaidFor(customerInput, creditInput) {

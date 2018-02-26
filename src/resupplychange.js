@@ -6,7 +6,9 @@ change = [
 	// { name: "twonies", quantity: 5, value: 2.0 }
 ];
 
-module.exports = function reSupplyChange(change) {
+const Products = require("../src/products");
+
+module.exports = function reSupplyChange(change, customerInput) {
 	const selectedProduct2 = [];
 	const product2 = inventory.filter(i2 => i2.code === customerInput);
 	const x2 = product2.map(i2 => {
@@ -14,14 +16,14 @@ module.exports = function reSupplyChange(change) {
 		q2["name"] = i2.name;
 		q2["code"] = i2.code;
 		q2["quantity"] = i2.quantity;
-		q2["price"] = i2.price;
+		q2["cost"] = i2.cost;
 		return selectedProduct2.push(q2);
 	});
-	if (selectedProduct2[0].price <= creditInput) {
+	if (selectedProduct2[0].cost <= creditInput) {
 		selectedProduct2[0].quantity - 1;
 		console.log(
 			"Thank you, have a nice life, here is " +
-				(creditInput - selectedProduct2[0].price) / 0.25 +
+				(creditInput - selectedProduct2[0].cost) / 0.25 +
 				" quarters"
 		);
 		console.log(
@@ -34,7 +36,7 @@ module.exports = function reSupplyChange(change) {
 		{
 			return (
 				"Thank you, have a nice life " +
-				(creditInput - selectedProduct2[0].price) +
+				(creditInput - selectedProduct2[0].cost) +
 				" number of quarters"
 			);
 		}

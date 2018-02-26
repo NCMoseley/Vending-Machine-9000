@@ -9,11 +9,9 @@ Have functionality for printing inventory. See modules: isinventoryavailable, ge
 
 Have functionality for refilling inventory See module: refillinventory
 
-Have functionality for re-supplying change See module: resupplychange
+Have functionality for re-supplying change See module: vendingmachine
 
 Have functionality for dispensing inventory based on payment. See module: isitempaidfor
-
-Have functionality for returning change as coins (eg. $0.35 is 1 quarter and 1 dime)
 
 ## Tech
 

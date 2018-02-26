@@ -9,14 +9,13 @@ const addInventory = require("../src/vendingmachine");
 const getInventory = require("../src/vendingmachine");
 const purchaseProduct = require("../src/vendingmachine");
 
+// Please NOTE much of this code is inspired from a source listed in the readme.
+
 const Money = {
 	DOLLAR: { name: "Dollar", value: 1.0 },
-	SILVER_DOLLAR: { name: "Silver Dollar", value: 1.0 },
-	HALF_DOLLAR: { name: "Half Dollar", value: 0.5 },
 	QUARTER: { name: "Quarter", value: 0.25 },
 	DIME: { name: "Dime", value: 0.1 },
-	NICKEL: { name: "Nickel", value: 0.05 },
-	PENNY: { name: "Penny", value: 0.01 }
+	NICKEL: { name: "Nickel", value: 0.05 }
 };
 
 const Product = {
@@ -31,7 +30,7 @@ const Product = {
 };
 
 describe("Vending Machine", function() {
-	var vendingMachine;
+	let vendingMachine;
 
 	beforeEach(function() {
 		vendingMachine = new VendingMachine();
@@ -119,7 +118,6 @@ describe("Vending Machine", function() {
 		it("Can add multiple product to inventory", function() {
 			vendingMachine.addInventory(Product.A02);
 			vendingMachine.addInventory(Product.A02);
-			console.log(Product.A02);
 			expect(vendingMachine.getInventory(Product.A02)).toBe(2);
 		});
 

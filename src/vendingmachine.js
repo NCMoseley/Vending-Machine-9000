@@ -1,30 +1,9 @@
 "use strict";
 
+const Money = require("../src/money");
+const Products = require("../src/products");
+
 // Please NOTE this code is inspired from a source listed in the readme.
-
-const Money = {
-	DOLLAR: { name: "Dollar", value: 1.0 },
-	QUARTER: { name: "Quarter", value: 0.25 },
-	DIME: { name: "Dime", value: 0.1 },
-	NICKEL: { name: "Nickel", value: 0.05 }
-};
-
-const Product = {
-	A01: { name: "Skittles", cost: 1.25 },
-	A02: { name: "Power Bar", cost: 1.25 },
-	A03: { name: "Testosterone Shot", cost: 12.25 },
-	A04: { name: "Muscle Milk", cost: 1.25 },
-	B01: { name: "Coke Zero", cost: 1.25 },
-	B02: { name: "Red Bull", cost: 3.25 },
-	B03: { name: "Whippet", cost: 15.25 },
-	B04: { name: "Poppet", cost: 18.25 }
-};
-
-// const Product = {
-// 	CHIPS: { name: "Chips", cost: 0.75 },
-// 	SODA: { name: "Soda", cost: 1.25 },
-// 	CANDY: { name: "Candy", cost: 0.85 }
-// };
 
 module.exports = function VendingMachine() {
 	this.display = "INSERT COIN";
@@ -96,7 +75,6 @@ module.exports = function VendingMachine() {
 	};
 
 	this.addInventory = function(product, number) {
-		// const idx = this.products.indexOf(product);
 		const idx = this.products
 			.map(p => {
 				return p.name;
@@ -116,7 +94,6 @@ module.exports = function VendingMachine() {
 				return p.name;
 			})
 			.indexOf(product.name);
-		console.log(idx);
 		if (idx > -1) {
 			return this.inventory[idx];
 		} else {
