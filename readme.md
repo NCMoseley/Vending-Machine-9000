@@ -3,11 +3,13 @@
 This is a small piece of software that can return vending machine like responses based on appropriate inputs.
 You can see all functions are tested and designed to be fundamental and simple.
 
-## Suite 1
+Please review the following .gifs for an example of the tests running.
+
+### Suite 1
 
 ![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%201.gif)
 
-## Suite 2
+### Suite 2
 
 ![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%202.gif)
 
