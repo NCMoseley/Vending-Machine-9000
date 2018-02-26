@@ -6,13 +6,13 @@ You can see all functions are tested and designed to be fundamental and simple.
 ![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%201.gif)
 ![Alt Text](https://github.com/NCMoseley/Vending-Machine-9000/blob/master/All%20tests%20Suite%202.gif)
 
-## Requirements
+## Project Requirements
 
 Have functionality for printing inventory. See modules: isinventoryavailable, getspecificinventory.
 
 Have functionality for refilling inventory See module: refillinventory
 
-Have functionality for re-supplying change See module: vendingmachine, returnCoins
+Have functionality for re-supplying change See module: Suite2vendingmachine, returnCoins
 
 Have functionality for dispensing inventory based on payment. See module: isitempaidfor
 
