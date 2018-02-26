@@ -3,6 +3,8 @@
 This is a small TDD piece of software that can return vending machine like responses based on appropriate inputs.
 You can see all functions are tested and designed to be fundamental and simple.
 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 ## Requirements
 
 Have functionality for printing inventory. See modules: isinventoryavailable, getspecificinventory.
