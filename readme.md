@@ -12,7 +12,7 @@ Have functionality for printing inventory. See modules: isinventoryavailable, ge
 
 Have functionality for refilling inventory See module: refillinventory
 
-Have functionality for re-supplying change See module: Suite2vendingmachine, returnCoins
+Have functionality for re-supplying change See module: Suite.2vendingmachine, returnCoins
 
 Have functionality for dispensing inventory based on payment. See module: isitempaidfor
 
