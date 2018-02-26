@@ -1,7 +1,7 @@
 "use strict";
 
-const Money = require("../src/money");
-const Products = require("../src/products");
+const Money = require("../suite.2/money");
+const Products = require("../suite.2/products");
 
 // Please NOTE this code is inspired from a source listed in the readme.
 

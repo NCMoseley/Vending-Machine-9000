@@ -6,7 +6,7 @@ change = [
 	// { name: "twonies", quantity: 5, value: 2.0 }
 ];
 
-const Products = require("../src/products");
+const Products = require("../suite.2/products");
 
 module.exports = function reSupplyChange(change, customerInput) {
 	const selectedProduct2 = [];

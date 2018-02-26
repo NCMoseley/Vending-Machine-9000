@@ -1,5 +1,5 @@
-const inventory = require("../src/inventory");
-const reSupplyChange = require("../src/resupplychange");
+const inventory = require("../suite.1/inventory");
+const reSupplyChange = require("../suite.1/resupplychange");
 
 module.exports = function isItemPaidFor(customerInput, creditInput) {
 	const selectedProduct2 = [];

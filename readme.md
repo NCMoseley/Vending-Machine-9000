@@ -26,6 +26,6 @@ use the command 'jest' in the root to run the test suites
 
 ## Reference
 
-Code design and inspiration provided by:
+Suite.2 code and test design and inspiration provided by:
 
 https://github.com/mcornell/js-vending-machine-kata

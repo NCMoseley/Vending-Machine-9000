@@ -1,11 +1,11 @@
-const getSpecificInventory = require("../src/getspecificinventory");
-const isInventoryAvailable = require("../src/isInventoryavailable");
-const isItemPaidFor = require("../src/isitempaidfor");
-const refillInventory = require("../src/refillinventory");
-const reSupplyChange = require("../src/resupplychange");
+const getSpecificInventory = require("../suite.1/getspecificinventory");
+const isInventoryAvailable = require("../suite.1/isInventoryavailable");
+const isItemPaidFor = require("../suite.1/isitempaidfor");
+const refillInventory = require("../suite.1/refillinventory");
+const reSupplyChange = require("../suite.1/resupplychange");
 
-const inventory = require("../src/inventory");
-const products = require("../src/products");
+const inventory = require("../suite.1/inventory");
+const products = require("../suite.2/products");
 
 // NOTE: I abandoned this design and changed to Suite 2. I wanted to include it because I am proud of the code.
 

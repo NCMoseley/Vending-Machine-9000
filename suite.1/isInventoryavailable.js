@@ -1,4 +1,4 @@
-const inventory = require("../src/inventory");
+const inventory = require("../suite.1/inventory");
 
 module.exports = function isInventoryAvailable(customerInput) {
 	const selectedProduct = [];
